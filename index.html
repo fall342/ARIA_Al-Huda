@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARIA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="nav-container">
+
+    <div class="logo">
+      <div class="logo-img">
+        <img src="./assets/logo aria.jpg" alt="Logo Remaja Masjid">
+      </div>
+      <span>ARIA</span>
+    </div>
+
+    <!-- MENU -->
+    <div class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#jadwal">Jadwal</a></li>
+        <li><a href="#pengurus">Pengurus</a></li>
+      </ul>
+      <a href="#kontak" class="btn-kontak">Kontak Kami</a>
+    </div>
+
+    <!-- BURGER -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section class="hero show">
+<h1>Angkatan Remaja Islam Al-Huda</h1>
+<div class="gold-line"></div>
+<p>Membangun Generasi Qurani yang Aktif & Berakhlak</p>
+<p id="today"></p>
+
+<div class="countdown-card">
+<h4>Menuju Akhir Ramadan</h4>
+<div class="countdown">
+<div><h3 id="days">00</h3><small>Hari</small></div>
+<div><h3 id="hours">00</h3><small>Jam</small></div>
+<div><h3 id="minutes">00</h3><small>Menit</small></div>
+<div><h3 id="seconds">00</h3><small>Detik</small></div>
+</div>
+<p id="ramadanEnd" class="ramadan-end"></p>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="tentang">
+<h2>Tentang Kami</h2>
+<div class="card-grid">
+<div class="card"><h3>Tentang</h3><p>Remaja Masjid adalah wadah pembinaan generasi muda yang berlandaskan nilai-nilai Islam serta berperan aktif dalam memakmurkan masjid dan melayani jamaah. Kami hadir untuk menjadi penggerak kegiatan positif, religius, dan sosial di lingkungan masjid.</p></div>
+<div class="card"><h3>Visi</h3><p>Mewujudkan generasi muda Islami yang aktif, berakhlak mulia, dan memberi dampak positif bagi jamaah serta masyarakat sekitar.</p></div>
+<div class="card"><h3>Misi</h3><p>1. Mengadakan kegiatan keagamaan yang bermanfaat bagi remaja dan jamaah.</p>
+                                <p>2. Membangun komunitas remaja yang solid dan saling mendukung.</p>
+                                <p>3. Menumbuhkan kepedulian sosial dan semangat kebersamaan antar jamaah.</p></div>
+</div>
+</section>
+
+<!-- Agenda Section -->
+<section id="agenda">
+<h2>Agenda Penting Ramadan</h2>
+<div class="card-grid">
+<div class="card"><h3>1 Ramadan</h3><p>Awal bulan suci Ramadan.</p></div>
+<div class="card"><h3>17 Ramadan</h3><p>Peringatan Nuzulul Qur'an.</p></div>
+<div class="card"><h3>Zakat Fitrah</h3><p>Penyaluran zakat sebelum Idul Fitri.</p></div>
+<div class="card"><h3>Lailatul Qadar</h3>Iktikaf 10 hari terakhir di malam ganjil</div>
+<div class="card"><h3>1 Syawal</h3><p>Hari Raya Idul Fitri.</p></div>
+</div>
+</section>
+
+<!-- Jadwal Section -->
+<section id="jadwal">
+<h2>Jadwal Kegiatan & Waktu Shalat</h2>
+<div class="jadwal-container">
+
+<div class="prayer-card waktu-card">
+<table>
+<tr><th>Hari</th><th>Kegiatan</th><th>Waktu</th></tr>
+<tr><td>Senin</td><td>Pengajian Kasepuhan</td><td>17:00</td></tr>
+<tr><td>Selasa</td><td>Pengajian TPA</td><td>16:30</td></tr>
+<tr><td>Rabu</td><td>Pengajian Kasepuhan</td><td>17:00</td></tr>
+<tr><td>Kamis</td><td>Pengajian TPA</td><td>16:30</td></tr>
+<tr><td>Jumat</td><td>Pengajian Kasepuhan</td><td>17:00</td></tr>
+<tr><td>Sabtu</td><td>Pengajian TPA</td><td>16:30</td></tr>
+<tr><td>Minggu</td><td>Mengajar Masjid Binaan</td><td>16:00</td></tr>
+</table>
+</div>
+
+<div class="prayer-card jadwal-card">
+<div class="digital-clock" id="clock"></div>
+<p>Sholat Berikutnya: <b id="nextPrayer"></b></p>
+<p>Countdown: <b><span id="countPrayer"></span></b></p>
+
+<table>
+<tr id="Subuh"><td>Subuh</td><td>04:41</td></tr>
+<tr id="Dzuhur"><td>Dzuhur</td><td>12:01</td></tr>
+<tr id="Ashar"><td>Ashar</td><td>15:13</td></tr>
+<tr id="Maghrib"><td>Maghrib</td><td>18:04</td></tr>
+<tr id="Isya"><td>Isya</td><td>19:12</td></tr>
+</table>
+</div>
+
+</div>
+</section>
+
+<!-- Jadwal Imsakiyah Section -->
+<section>
+<h2>Jadwal Imsakiyah Ramadan 1445H</h2>
+<div class="imsak-card">
+<p>Dapatkan jadwal imsakiyah lengkap selama bulan Ramadan.</p>
+<button class="gold-btn">Download Jadwal Ramadan</button>
+</div>
+</section>
+
+<!-- Pengurus Section -->
+<section id="pengurus">
+<h2>Struktur Pengurus</h2>
+<div class="profile-grid">
+<div class="profile"><img src="./assets/icon_human.webp"><h4>Azar</h4><p>Ketua</p></div>
+<div class="profile"><img src="./assets/icon_human.webp"><h4>Tami</h4><p>Sekretaris</p></div>
+<div class="profile"><img src="./assets/icon_human.webp"><h4>Adam</h4><p>Bendahara</p></div>
+<div class="profile"><img src="./assets/icon_human.webp"><h4>Haris</h4><p>Humas</p></div>
+</div>
+</section>
+
+<!-- Galeri Section -->
+<section>
+<h2>Galeri Kegiatan</h2>
+<div class="gallery">
+
+  <div class="gallery-item">
+    <img src="./assets/ariaa.jpg">
+  </div>
+
+  <div class="gallery-item">
+    <img src="./assets/ariaa1.jpg">
+  </div>
+
+  <div class="gallery-item">
+    <img src="./assets/masjid.jpg">
+  </div>
+
+  <div class="gallery-item">
+    <img src="img/kegiatan4.jpg">
+  </div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<footer id="kontak">
+  <div class="footer-grid">
+
+    <!-- Kolom 1 -->
+    <div>
+      <h3 class="footer-logo">🕌 Angkatan Remaja Islam Al-Huda</h3>
+      <p class="footer-desc">
+        Menjadi pusat pemberdayaan pemuda muslim yang berkarakter dan 
+        berorientasi pada kemaslahatan umat. Mari bergabung dan berkontribusi.
+      </p>
+
+      <div class="social-icons">
+        <a href="#"><span>🔗</span></a>
+        <a href="#"><span>✉</span></a>
+        <a href="#"><span>📞</span></a>
+      </div>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div>
+      <h4>Navigasi</h4>
+      <ul class="footer-links">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#jadwal">Jadwal Ramadan</a></li>
+        <li><a href="#pengurus">Pengurus</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div>
+      <h4>Hubungi Kami</h4>
+      <ul class="footer-contact">
+        <li>📍 Tembesi, Ponjong, Ponjong, Gunungkidul</li>
+        <li>📞 +62 812 3456 7890</li>
+        <li>✉ aria_alhuda@gmail.com</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+    <p>© 2026 ARIA. SELURUH HAK CIPTA DILINDUNGI.</p>
+    <div class="footer-policy">
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat & Ketentuan</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body> 
+</html>
