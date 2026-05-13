@@ -37,7 +37,7 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
-const countdownText = document.getElementById("countdown-text");
+const countdownText = document.getElementById("ramadanEnd");
 
 function updateCountdown() {
   const now = new Date();
