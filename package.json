@@ -1,0 +1,23 @@
+{
+  "name": "aria_al-huda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fall342/ARIA_Al-Huda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fall342/ARIA_Al-Huda/issues"
+  },
+  "homepage": "https://github.com/fall342/ARIA_Al-Huda#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
